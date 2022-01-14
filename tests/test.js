@@ -10,4 +10,8 @@ describe('Install', () => {
   it('should install JRE with custom options without throwing an error', () => {
     return njre.install(11, { os: 'aix', arch: 'ppc64', openjdk_impl: 'openj9' })
   }).timeout(100000)
+
+  it('should install JRE in a custom director without throwing an error', () => {
+    return njre.install(11, {}, '/Users/raptor/cs/njre/')
+  }).timeout(100000)
 })

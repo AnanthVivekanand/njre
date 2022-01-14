@@ -1,6 +1,6 @@
 <a name="install"></a>
 
-## install([version], [options]) ⇒
+## install([version], [options], [dir]) ⇒
 Installs a JRE copy for the app
 
 **Kind**: global function  
@@ -16,8 +16,27 @@ Installs a JRE copy for the app
 | [options.release] | <code>string</code> | <code>&quot;latest&quot;</code> | Release |
 | [options.type] | <code>string</code> | <code>&quot;jre&quot;</code> | Binary Type (`jre`/`jdk`) |
 | [options.heap_size] | <code>string</code> |  | Heap Size (`normal`/`large`) |
+| [dir] | <code>string</code> |  | Directory to install in |
 
 **Example**  
 ```js
-const njre = require('njre')// Use default optionsnjre.install()  .then(dir => {    // Do stuff  })  .catch(err => {    // Handle the error  })// or custom onesnjre.install(11, { os: 'aix', arch: 'ppc64', openjdk_impl: 'openj9' })  .then(dir => {    // Do stuff  })  .catch(err => {    // Handle the error  })
+const njre = require('njre')
+
+// Use default options
+njre.install()
+  .then(dir => {
+    // Do stuff
+  })
+  .catch(err => {
+    // Handle the error
+  })
+
+// or custom ones
+njre.install(11, { os: 'aix', arch: 'ppc64', openjdk_impl: 'openj9' })
+  .then(dir => {
+    // Do stuff
+  })
+  .catch(err => {
+    // Handle the error
+  })
 ```

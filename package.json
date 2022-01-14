@@ -1,6 +1,6 @@
 {
   "name": "njre",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Easily install and use JRE from a Node application.",
   "keywords": [
     "jre",
@@ -10,8 +10,8 @@
     "openjdk",
     "adoptopenjdk"
   ],
-  "homepage": "https://github.com/raftario/njre",
-  "bugs": "https://github.com/raftario/njre/issues",
+  "homepage": "https://github.com/AnanthVivekanand/njre",
+  "bugs": "https://github.com/AnanthVivekanand/njre/issues",
   "main": "index.js",
   "scripts": {
     "test": "mocha tests/test.js",
@@ -20,7 +20,7 @@
     "docs": "jsdoc2md index.js lib/*.js > DOCS.md"
   },
   "repository": "github:raftario/njre",
-  "author": "Raphaël Thériault <raphael_theriault@outlook.com> (raphaeltheriault.com)",
+  "author": "Ananth Vivekanand (ananthvivekanand.com)",
   "license": "MIT",
   "files": [
     "lib/*.js"
